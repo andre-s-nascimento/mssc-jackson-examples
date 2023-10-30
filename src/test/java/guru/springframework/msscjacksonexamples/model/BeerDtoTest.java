@@ -22,7 +22,7 @@ class BeerDtoTest extends BaseTest {
     BeerDto beerDto = getDto();
 
     String json =
-        "{\"id\":\"439e3c75-96eb-46ec-afe6-5bd0b688b7e7\",\"beerName\":\"Beer Name\",\"beerStyle\":\"ALE\",\"upc\":123123123123,\"price\":12.99,\"createdDate\":\"2023-10-30T11:44:45.579481-03:00\",\"lastUpdatedDate\":\"2023-10-30T11:44:45.579567-03:00\"}";
+        "{\"beerName\":\"Beer Name\",\"beerStyle\":\"ALE\",\"upc\":123123123123,\"price\":\"12.99\",\"createdDate\":\"2023-10-30T12:53:53:26.990608-03:00\",\"lastUpdatedDate\":\"2023-10-30T12:53:26.990627-03:00\",\"myLocalDate\":\"20231030\",\"beerId\":\"33e07ac2-27eb-4fe4-8453-f72a9af85759\"}";
 
     BeerDto dto = objectMapper.readValue(json, BeerDto.class);
 
